@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Manage User</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+  <div class="grid grid-cols-12 h-screen">
+        
+        <div class=" side-bar col-span-2 bg-white w-full">
+
+          <div class= "flex  mt-16  ml-3">
+            <img src="images/light.svg" alt="" class="w-20">
+            <span class="items-center pt-3 font-bold text-2xl text-[#2B3674]">NEABILLING</span>
+          </div>
+          <hr class="border-[#F4F7FE] mt-7">  
+
+          <div class="mt-14">
+
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/dashboard.svg" alt="" class="w-6 ">
+              <a href="dashboard.html" class="items-center  font-semibold pt-1 pl-3 text-[#A3AED0]">Dashboard</a>
+            </div>
+
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/report.svg" alt="" class="w-6 pr">
+              <a href="reports.html" class="items-center  pt-1 pl-3 text-[#A3AED0]">Reports</a>
+            </div>
+            
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/manage_user.svg" alt="" class="w-6 pr">
+              <a href="manage-users.html" class="items-center  pt-1 pl-3  text-[#2B3674]">Manage User</a>
+              
+            </div>
+            
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/generator_bill.svg" alt="" class="w-6">
+              <a href="generate_Bill.html" class="items-center  pt-1 pl-3  text-[#A3AED0]">Generate Bill</a>
+            </div>
+
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/profile.svg" alt="" class="w-6 pr">
+              <a href="profile.html" class="items-center  pt-1 pl-3  text-[#A3AED0]">Profile</a>
+            </div>
+
+          </div>
+          <div class="mt-[30rem] flex justify-center mb-14 ">
+            <button class="bg-gradient-to-r from-[#868CFF] to-[#4318FF] ndigo-600 rounded-3xl mt-6 px-[4.5rem] py-2.5 text-sm text-white">Logout</button><br>
+          </div>
+
+        </div>
+        
+        <!-- Column 2 -->
+   <div class="col-span-10 bg-[#F4F7FE] w-full pl-8">   
+
+          
+              <div class=" nav-bar grid grid-cols-2 pt-6 grid-flow-col ml-2 ">
+                      <div class=" box-1 col-start-1 col-span-3 mt-2 text-xs text-[#707EAE]">Pages/ Dashboard
+
+                        <div class="col-start-1 col-end-3 text-3xl text-[#2B3674] font-semibold pt-3 ">Manage User</div>
+                      </div>
+
+                  <div class="w-96 h-14  rounded-full  flex-row col-span-2  mr-12 bg-white   grid grid-cols-2  grid-flow-col ">
+                    <div class="flex  bg-[#F4F7FE]  h-9 border-1 rounded-full m-2.5 col-start-1 col-span-7  mr-6"> 
+                        <input type="text" class="w-1/2  rounded-full px-4 py-2  bg-[#F4F7FE] focus:outline-none text-xs  " placeholder="&#128269;    Search">
+                    </div>
+                    <div class="flex-row flex justify-cente pr-4 space-x-4">
+                      <img src="/images/moon.svg" alt="">
+                      <img src="/images/Avatar.svg" alt="">
+                    </div>
+                  
+                  
+                  </div>
+
+              </div>
+
+          <h2 class="ml-3 mt-3 text-lg font-semibold text-[#05CD99]">Lalitpur Branch</h2>
+          <!--Form-->
+            <div class="float-right mr-20">
+              <a href="manage_user_addUser.html" class="px-7 py-2.5 bg-[#3965FF] text-white rounded-2xl text-xs">Add User</a>
+              </div>
+          <div class="bg-white pt-5  rounded-3xl mt-16  mr-12    h-[755px]">
+            <div class="">
+            <h1 class="text-[#2B3674] text-2xl font-semibold pl-9">User Details</h1>
+
+            <div class="overflow-x-auto mt-2">
+              <div class="inline-block min-w-full">
+                <div class="overflow-hidden">
+                  <table class="min-w-full divide-y divide-gray-200"> 
+                    <thead class="">
+                      <tr class=" text-sm text-left">
+                        <th class="pl-10 w-[rem]">UID</th>
+                        <th class=" w-[24rem] ">Name</th>
+                        <th class=" w-96">Address</th>
+                        <th class="pl-3 w-56 text-center" >SCNO</th>
+                        <th class="pl-2 w- text-center ">Amount</th>
+                        <th class="text-center ">Action</th>  
+                      </tr>
+                    </thead>
+
+                    <tbody class="text-sm text-[#2B3674] font-semibold">
+                      <tr>
+                        <td class="pl-10  pt-8"> 112</td>
+                        <td class=" pt-8 ">Mithlesh Kumar Singh</td>
+                        <td class=" pt-8 ">Kritipur, kathmandu</td>
+                        <td class="pt-8 text-center">12358G</td>
+                        <td class="text-center pt-8">987569326</td>
+                        <td>
+                          <div class="flex pt-7 justify-center ">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 113</td>
+                        <td class=" pt-4">Suron Mahrajan</td>
+                        <td class=" pt-4">Natole, lalitpur</td>
+                        <td class="pt-4  text-center">18758B</td>
+                        <td class="text-center pt-4 ">9844366726</td>
+                        <td>
+                          <div class="flex pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4 ">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 114</td>
+                        <td class=" pt-4">Sandesh Bajcharya</td>
+                        <td class="pt-4">Baneshwan, kathmandu</td>
+                        <td class="pt-4 text-center">12358G</td>
+                        <td class="text-center pt-4 ">367463863</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 115</td>
+                        <td class=" pt-4">Sudin Desai</td>
+                        <td class=" pt-4">Baneshwar, Kathmandu</td>
+                        <td class="pt-4 text-center">12358G</td>
+                        <td class="text-center pt-4 ">987569326</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 116</td>
+                        <td class=" pt-4">Vonjala Desi</td>
+                        <td class="pt-4">Bhaisepti, Lalitpur</td>
+                        <td class="pt-4 text-center">12358G</td>
+                        <td class="text-center pt-4 ">545685538</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 117</td>
+                        <td class="pt-4">namu Limbu</td>
+                        <td class="pt-4">Sampung, Chawk, Dharan</td>
+                        <td class="pt-4 text-center">12358G</td>
+                        <td class="text-center pt-4 ">987569326</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 118</td>
+                        <td class="pt-4">Nimesh Sthpati</td>
+                        <td class=" pt-4">Kritipur, kathmandu</td>
+                        <td class="pt-4 text-center">12358G</td>
+                        <td class="text-center pt-4 ">8367783792</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 119</td>
+                        <td class="pt-4">Samikshya Basnet</td>
+                        <td class="pt-4">Nakhipot, Lalitpur</td>
+                        <td class="pt-4 text-center">741369P</td>
+                        <td class="text-center pt-4 ">987569326</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 120</td>
+                        <td class="pt-4">Nimesh Sthapit</td>
+                        <td class=" pt-4">Newroad, Pokhara</td>
+                        <td class="pt-4 text-center">987569326</td>
+                        <td class="text-center pt-4 ">74123B</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 121</td>
+                        <td class=" pt-4">android-seeklogo</td>
+                        <td class="pt-4">Numa Limbu</td>
+                        <td class="pt-4 text-center">742552A</td>
+                        <td class="text-center pt-4 ">537643438</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 122</td>
+                        <td class="pt-4">Amrita Singh</td>
+                        <td class=" pt-4">Kritipur, kathmandu</td>
+                        <td class="pt-4 text-center">12358G</td>
+                        <td class="text-center pt-4 ">987569326</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 123</td>
+                        <td class=" pt-4">Apple_logo</td>
+                        <td class="pt-4">Baneshwor, Kathmandu</td>
+                        <td class="pt-4 text-center">12358G</td>
+                        <td class="text-center pt-4 ">434568756</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 124</td>
+                        <td class="pt-4">Mithlesh Kumar Singh</td>
+                        <td class=" pt-4">Kritipur, kathmandu</td>
+                        <td class="pt-4 text-center">64558G</td>
+                        <td class="text-center pt-4 ">54534765</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 126</td>
+                        <td class="pt-4">Mithlesh Kumar Singh</td>
+                        <td class=" pt-4">Kritipur, kathmandu</td>
+                        <td class="pt-4 text-center">64578G</td>
+                        <td class="text-center pt-4 ">987569326</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pl-10 w-1/12 pt-4"> 127</td>
+                        <td class=" pt-4">Mithlesh Kumar Singh</td>
+                        <td class="pt-4">Jirakpur, Punjab</td>
+                        <td class="pt-4 text-center">29576B</td>
+                        <td class="text-center pt-4 ">745429326</td>
+                        <td>
+                          <div class="flex  pt-3 justify-center">
+                          <img src="https://cdn-icons-png.flaticon.com/128/1160/1160758.png " alt="" class="w-4">
+                          <div class="h-4 border-l border-gray-300 mx-4"></div>
+                          <img src="https://cdn-icons-png.flaticon.com/128/6048/6048004.png" alt="" class="w-4">
+                        </div>
+                          </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div> 
+            </div>
+            <div class="float-right pr-12 ">
+            <button class="px-2 flex items-center justify-center  bg-[#F4F7FE] text-[#4318FF] rounded-lg text-center text-3xl ">...</button>
+            
+          </div>
+             
+             </div>
+
+          </div>
+
+           
+
+            </div>
+   
+
+            
+       </div>
+
+ 
+      
+</body>
+</html

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+  <div class="grid grid-cols-12 h-screen">
+        
+        <div class=" side-bar col-span-2 bg-white w-full">
+
+          <div class= "flex  mt-16  ml-3">
+            <img src="images/light.svg" alt="" class="w-20">
+            <span class="items-center pt-3 font-bold text-2xl text-[#2B3674]">NEABILLING</span>
+          </div>
+          <hr class="border-[#F4F7FE] mt-7">  
+
+          <div class="mt-14">
+
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/dashboard.svg" alt="" class="w-6 pr">
+              <span class="items-center font-semibold pt-1 pl-3  text-[#2B3674]">Dashboard</span>
+            </div>
+
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/report.svg" alt="" class="w-6 pr">
+              <a href="reports.html" class="items-center  pt-1 pl-3 text-[#A3AED0]">Reports</a>
+            </div>
+            
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/manage_user.svg" alt="" class="w-6 pr">
+              <a href="manage-users.html" class="items-center  pt-1 pl-3  text-[#A3AED0]">Manage User</a>
+              
+            </div>
+            
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/generator_bill.svg" alt="" class="w-6 pr">
+              <a href="generate_Bill.html" class="items-center  pt-1 pl-3  text-[#A3AED0]">Generate Bill</a>
+              
+            </div>
+
+            <div class= "flex  mt-5  ml-9">
+              <img src="images/profile.svg" alt="" class="w-6 pr">
+              <a href="profile.html" class="items-center  pt-1 pl-3  text-[#A3AED0]">Profile</a>
+             
+            </div>
+
+          </div>
+          <div class="mt-[30rem] flex justify-center ">
+            <button class="bg-gradient-to-r from-[#868CFF] to-[#4318FF] ndigo-600 rounded-3xl mt-6 px-[4.5rem] py-2.5 text-sm text-white">Logout</button><br>
+          </div>
+
+        </div>
+        
+        <!-- Column 2 -->
+   <div class="col-span-10 bg-[#F4F7FE] w-full">   
+
+          
+              <div class=" nav-bar grid grid-cols-2 pt-6 grid-flow-col ml-6">
+                      <div class=" box-1 col-start-1 col-span-3 mt-2 text-xs text-[#707EAE]">Pages/ Dashboard
+
+                        <div class="col-start-1 col-end-3 text-3xl text-[#2B3674] font-semibold pt-3">Main Dashboard</div>
+                      </div>
+
+                  <div class="w-96 h-14  rounded-full  flex-row col-span-2  mr-12 bg-white   grid grid-cols-2  grid-flow-col ">
+                    <div class="flex  bg-[#F4F7FE]  h-9 border-1 rounded-full m-2.5 col-start-1 col-span-7  mr-6"> 
+                        <input type="text" class="w-1/2  rounded-full px-4 py-2  bg-[#F4F7FE] focus:outline-none text-xs  " placeholder="&#128269;    Search">
+                    </div>
+                    <div class="flex-row flex justify-cente pr-4 space-x-4">
+                      <img src="/images/moon.svg" alt="">
+                      <img src="/images/Avatar.svg" alt="">
+                    </div>
+                  
+                  
+                  </div>
+
+              </div>
+
+          <h2 class="ml-6 mt-3 text-lg font-semibold text-[#05CD99]">Lalitpur Branch</h2>
+          <!--Row-1-->
+            <div class="grid grid-cols-3 gap-10 w-3/4 ml-6 mt-3">
+
+              <div class="bg-white border rounded-3xl flex justify-cente p-6">
+                <img src="/images/comunity_icon.svg " alt="">
+                <div class="pl-5 text-xs pt-1 text-[#A3AED0]">Users  <br>  <span class="text-xl text-[#2B3674] font-semibold">45</span></div>
+                <!-- <div class="text-xl  text-[#2B3674]  "></div> -->
+              </div>
+
+              <div class="bg-white rounded-3xl flex justify-cente p-6">
+                <img src="/images/dollar.svg" alt="">
+                <div class="pl-5 text-xs pt-1 text-[#A3AED0]"> Total Payments  <br>  <span class="text-xl text-[#2B3674] font-semibold "> Rs. 200,000</span> </div>
+              </div>
+
+              <div class="bg-white rounded-3xl  flex justify-cente p-6">
+                <img src="images/user_icon.svg" alt="">
+                <div class="pl-5 text-xs pt-1 text-[#A3AED0]"> Active users  <br>  <span class="text-xl text-[#2B3674] font-semibold">22</span></div>
+              </div>
+            </div>
+    
+
+        <div class="grid grid-cols-12 pt-8 gap-4 mr-10 ml-6" >
+             <!-- Row-2 -->
+            <div class="bg-white col-span-7 rounded-2xl ">
+
+              <div class="px-3 py-7">
+                <span class="bg-[#F4F7FE] m-4 px-3 py-2 text-xs text-[#A3AED0] rounded-lg"> &#128197; This month </span>
+                <img src="images/chart.svg" alt="" class="float-right bg-[#F4F7FE]  rounded-lg p-2 mr-4">
+              </div>
+              
+               <div class="grid grid-cols-12 ">
+                <div class="col-span-3 mt-4 ml-6 ">
+                  <h1 class=" font-semibold text-3xl text-[#2B3674]">Rs. 200,000</h1>
+                  <p class="text-xs   text-[#A3AED0]">Total Payments</p>
+      
+                    <!-- <input type="checkbox"  id="checked_box" checked class="accent-[#05CD99] mt-6">
+                    <label for="checked_box" class="text-xs  text-[#05CD99] ml-1"> On track of this area</label>    -->
+                    <ul class="max-w-md  text-[#05CD99] list-outside mt-5">
+                      <li class="flex items-center text-xs">
+                          <svg class="w-5 h-5 mr-1.5 text-[#05CD99] dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                          On track of this area
+                      </li>
+                    </ul>
+                </div>
+               
+                <div class="col-span-9">
+                 
+                  <div class="relative mt-4">
+                  <img src="images/above_graph.svg" alt=""  class=" relative z-10  ml-60 mb-10  ">
+                  <img src="images/graph_1.svg" alt="" class="absolute inset-6" class="absolute inset-0 w-full h-full ml-0">
+                  <img src="images/graph_2.svg" alt="" class="ml-11">
+                  </div>
+
+               
+
+                  <div class="grid grid-cols-6 pt-8 gap-4 mr-10 ml-6 text-xs  mb-8 text-[#A3AED0]" >
+                  <div>SEP</div>
+                  <div>OCT</div>
+                  <div>NOV</div>
+                  <div>DEC</div>
+                  <div>JAN</div>
+                  <div>FEB</div>
+                  </div>
+                  
+                
+                </div>
+                
+               </div>
+            </div>
+
+                <!-- col-2 in row-2 -->
+              
+            <div class="bg-white col-span-5 rounded-3xl mr-6 ">
+              
+               
+                  <div class="m-6 text-[#2B3674] font-semibold text-sm">Payment Analysis
+                  <span class="float-right text-xs text-[#A3AED0]">Monthly</span>
+                  </div>
+               
+
+                <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <canvas id="myChart" class="w-10 h-16" width="10%" ></canvas>
+                -->
+             <div class="justify-center flex mt-8 ">
+              <img src="images/piechart.svg" alt="" >
+            </div>
+
+              <div class="flex justify-center mt-5">
+                <div class=" rounded-lg border-2  ">
+                <ul class="list-disc marker:text-[#4318FF] marker:text-2xl list-inside " >
+                  <li>
+                   <span class="text-xs text-[#A3AED0] ml-1">Payments Done</span>
+                   </li>
+                  <div class="text-center text-[#2B3674] font-semibold">63%</div>
+                </ul>
+                </div>
+                <div class=" rounded-lg border-2 ">
+                  <ul class="list-disc marker:text-[#6AD2FF] marker:text-2xl list-inside">
+                    <li class="text-xs text-[#A3AED0]">Payments Pending</li>
+                    <div class="text-center text-[#2B3674] font-semibold">25%</div>
+                  </ul>
+                </div>
+              </div>
+                          
+            </div>
+
+           </div>
+         
+
+
+       
+            <div class=" last-box mt-6 bg-gradient-to-b from-white to-slate-50 mr-6 rounded-2xl ml-6">
+              <div class="mt-5 pt-4 mx-4">
+                <span class=" font-semibold text-[#1B2559]">Recent Payments</span>
+                <button class="bg-[#F4F7FE] border-2 rounded-xl py-1  px-2 float-right text-xs text-[#4318FF] mr-16">See all</button>
+              </div>
+             
+              <div class="">
+                <div class="grid grid-cols-4 p-4  rounded-2xl shadow-md  my-3 mx-4 gap-x-7 bg-white">
+                <div class=" flex">
+                  <img src="images/pay-01.svg " alt="" class="w-14 h-14">
+                  <div class="text-center pl-3 pt-4 text-[#1B2559] text-sm font-semibold">Mithilesh K.Singh</div>
+                </div>
+                <div class="text-[#1B2559] text-sm font-semibold pt-3 ">Rs. 3000</div>
+                <div><img src="images/eye.svg" alt="" class="pt-3">
+                </div>
+                <div class="text-sm text-[#A3AED0] text-center pt-3">30s ago</div>
+              </div>
+              
+              <div class="grid grid-cols-4 p-3 rounded-2xl m-3">
+                <div  class=" flex">
+                  <img src="images/pay_02.svg " alt="" class="w-14 h-14">
+                  <div class="text-center pl-3 pt-4 text-[#1B2559] text-sm font-semibold">Suron Maharjan</div>
+                </div>
+                <div class="text-[#1B2559] text-sm font-semibold pl-2 pt-3">Rs.800</div>
+                <div><img src="images/eye.svg" alt="" class="pl-3 pt-3"></div>
+                <div class="text-sm text-[#A3AED0] text-center pl-2 pt-3">58s ago</div>
+              </div>
+
+              <div class="grid grid-cols-4 m-3 rounded-2xl border-pink-50 p-3">
+                <div  class=" flex">
+                  <img src="images/pay_03.svg " alt="" class="w-14 h-14">
+                  <div class="text-center pl-3 pt-4 text-[#1B2559] text-sm font-semibold">Sandesh Bajraharya</div>
+                </div>
+                <div class="text-[#1B2559] text-sm font-semibold pl-2 pt-3">Rs.5500</div>
+                <div><img src="images/eye.svg" alt="" class="pl-3 pt-3"></div>
+                <div class="text-sm text-[#A3AED0] text-center pl-2 pt-3">1m ago</div>
+              </div>
+
+              <div class="grid grid-cols-4 m-3 rounded-2xl border-pink-50 p-3">
+                <div  class=" flex">
+                  <img src="images/pay_03.svg " alt="" class="w-14 h-14">
+                  <div class="text-center pl-3 pt-4 text-[#1B2559] text-sm font-semibold">Subin Sedhai</div>
+                </div>
+                <div class="text-[#1B2559] text-sm font-semibold pl-2 pt-3">Rs.2000</div>
+                <div><img src="images/eye.svg" alt="" class="pl-3 pt-3"></div>
+                <div class="text-sm text-[#A3AED0] text-center pl-2 pt-3">1m ago</div>
+              </div>
+
+              </div>
+
+            </div>
+   
+
+            
+       </div>
+
+  </div>
+      
+</body>
+</html
